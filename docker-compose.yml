@@ -1,0 +1,14 @@
+version: '3'
+services:
+  searx:
+    restart: always
+    build:
+      context: /opt/django/project
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:8888:8888"
+    image: searx
+    container_name: searx
+    environment:
+      - BASE_URL="https://searx.yangsihan.com"
+      - IMAGE_PROXY=True
