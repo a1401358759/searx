@@ -374,6 +374,12 @@ input[type=checkbox]:not(:checked)+.label_hide_if_checked+.label_hide_if_not_che
     border-radius: 25px!important;
     box-shadow: 1px 1px 6px 0 rgba(119,119,119,.5);
     font-size: 18px;
+    margin: 1.5rem 0;
+}
+
+.input-group.search-margin {
+    width: 100%;
+    max-width: 640px;
 }
 
 #search_form .search-container {
@@ -392,6 +398,8 @@ input[type=checkbox]:not(:checked)+.label_hide_if_checked+.label_hide_if_not_che
     background-size: 20px 20px;
     color: #000;
     text-indent: -9999px;
+    border: 0;
+    margin: 1.5rem 0;
 }
 
 #search_form .input-group-btn {
@@ -404,11 +412,11 @@ input[type=checkbox]:not(:checked)+.label_hide_if_checked+.label_hide_if_not_che
 
 #search_form .input-group-btn .btn:hover {
     outline: 0;
-    background-color: #fff;
 }
 
 .custom-select {
     border: #ddd 1px solid;
+    margin: 2em 0;
 }
 #check-advanced {
     display: none;
