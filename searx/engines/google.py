@@ -78,7 +78,7 @@ country_to_hostname = {
     'TH': 'www.google.co.th',  # Thailand
     'TR': 'www.google.com.tr',  # Turkey
     'UA': 'www.google.com.ua',  # Ukraine
-    # 'CN': 'www.google.cn',  # China, only from China ?
+    'CN': 'www.google.com.hk',  # China, only from China ?
     'HK': 'www.google.com.hk',  # Hong Kong
     'TW': 'www.google.com.tw'  # Taiwan
 }
@@ -146,8 +146,7 @@ def parse_url(url_string, google_hostname):
 
     # normal case
     parsed_url = urlparse(url_string)
-    if (parsed_url.netloc in [google_hostname, '']
-            and parsed_url.path == redirect_path):
+    if (parsed_url.netloc in [google_hostname, ''] and parsed_url.path == redirect_path):
         query = dict(parse_qsl(parsed_url.query))
         return query['q']
     else:
